@@ -1,7 +1,7 @@
 from multiprocessing import *
-from ControllerClass import HuiController
-from ControllerClass import PiController
 
+from .Controllers.HuiControllerClass import HuiController
+from .Controllers.PiControllerClass import PiController
 
 def logic():
 
