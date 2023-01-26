@@ -6,12 +6,9 @@ class InputPage(tk.Frame):
         self.controller = controller
         
         message = tk.Label(self, text= "Welcome to PAPI, Please Scan QR", font= ("Comic Sans Ms",50)) 
-        message.grid()
+        message.pack()
 
         manual_button = tk.Button(self, text="Manual Mode")
-        manual_button.grid(column=0, row=5)
+        manual_button.pack()
 
-        # button1 = tk.Button(self, text= "Manual Mode", font= ("Copper Black", 20), fg= "green",
-        # command= lambda: controller.give_mm_bool(True))
-        # button1.pack(side= "bottom", fill= "x", pady=5)
 

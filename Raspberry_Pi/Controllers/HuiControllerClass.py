@@ -7,7 +7,7 @@ class HuiController(tk.Tk):
    def __init__(self):
       super().__init__()
       self.title("HuiController")
-      self.geometry("200x200")
+      self.geometry("800x800")
 
       # Create a container frame
       self.container = tk.Frame(self)
@@ -20,9 +20,9 @@ class HuiController(tk.Tk):
       self.frames["InputPage"] = InputPage(self.container, self)
 
       # Show the Input Page by default
-      # self.show_frame("InputPage")
+      self.show_frame("InputPage")
 
-      #Show Manual Page for testing.
+
 
    def create_page(self, page_name, *args, **kwargs):
       if page_name in self.frames:
